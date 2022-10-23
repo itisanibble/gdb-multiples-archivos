@@ -19,3 +19,10 @@ var on_file_uploaded = function () {
     });
   }
 };
+
+addEventListener('keydown', (event) => {
+  //f4 = 115 en keyCode
+  if (event.keyCode == 115) {
+    document.querySelector('#control-btn-upload').click();
+  }
+});
